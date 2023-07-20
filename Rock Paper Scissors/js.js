@@ -7,6 +7,8 @@ function game()
     let userIP=prompt("Enter rock or paper or scissors").trim().toLowerCase();
     if(retry===true)
     {
+       if(userIP==="rock"||userIP==="paper"||userIP==="scissors")
+       {
         compIP=summa[Math.floor(Math.random()*3)];
         switch(userIP)
         {
@@ -99,6 +101,12 @@ function game()
                 }
 
         }
+        }
+      else
+      { 
+         alert("you entered something wrong.Try again");
+         game()
+      }
     }
     else
     {
