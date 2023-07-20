@@ -4,7 +4,7 @@ function game()
     let summa=choice.split(" ");
     let compIP;
     retry=confirm("Do you want to start the game");
-    let userIP=prompt("Enter rock or paper or scissors");
+    let userIP=prompt("Enter rock or paper or scissors").trim().toLowerCase();
     if(retry===true)
     {
         compIP=summa[Math.floor(Math.random()*3)];
