@@ -9,104 +9,104 @@ function game()
     {
        if(userIP==="rock"||userIP==="paper"||userIP==="scissors")
        {
-        compIP=summa[Math.floor(Math.random()*3)];
-        switch(userIP)
-        {
-            case "rock":
-                if(compIP==="paper")
-                {
-                    alert("Computer Won");
-                    retry=confirm("Do you want to try the game");
-                    if(retry===true)
+            compIP=summa[Math.floor(Math.random()*3)];
+            switch(userIP)
+            {
+                case "rock":
+                    if(compIP==="paper")
                     {
-                        game();
-                    }
-                    else{
-                        alert("Thanks for playing");
+                        alert("Computer Won");
+                        retry=confirm("Do you want to try the game");
+                        if(retry===true)
+                        {
+                            game();
+                        }
+                        else{
+                            alert("Thanks for playing");
+                            break;
+                        }
                         break;
                     }
-                    break;
-                }
-                else{
-                    alert("You have won");
-                    retry=confirm("Do you want to try again");
-                    if(retry===true)
-                    {
-                        game();
-                    }
                     else{
-                        alert("Thanks for playing");
+                        alert("You have won");
+                        retry=confirm("Do you want to try again");
+                        if(retry===true)
+                        {
+                            game();
+                        }
+                        else{
+                            alert("Thanks for playing");
+                            break;
+                        }
                         break;
-                    }
-                    break;
 
-                }
-            case "paper":
-                if(compIP==="scissors")
-                {
-                    alert("Computer Won");
-                    retry=confirm("Do you want to try again");
-                    if(retry===true)
-                    {
-                        game();
                     }
-                    else{
-                        alert("Thanks for playing");
+                case "paper":
+                    if(compIP==="scissors")
+                    {
+                        alert("Computer Won");
+                        retry=confirm("Do you want to try again");
+                        if(retry===true)
+                        {
+                            game();
+                        }
+                        else{
+                            alert("Thanks for playing");
+                            break;
+                        }
                         break;
                     }
-                    break;
-                }
-                else{
-                    alert("You have won");
-                    retry=confirm("Do you want to try again");
-                    if(retry===true)
-                    {
-                        game();
-                    }
                     else{
-                        alert("Thanks for playing");
+                        alert("You have won");
+                        retry=confirm("Do you want to try again");
+                        if(retry===true)
+                        {
+                            game();
+                        }
+                        else{
+                            alert("Thanks for playing");
+                            break;
+                        }
                         break;
-                    }
-                    break;
 
-                }
-            case "scissors":
-                if(compIP==="rock")
-                {
-                    alert("Computer Won");
-                    retry=confirm("Do you want to try again");
-                    if(retry===true)
-                    {
-                        game();
                     }
-                    else{
-                        alert("Thanks for playing");
+                case "scissors":
+                    if(compIP==="rock")
+                    {
+                        alert("Computer Won");
+                        retry=confirm("Do you want to try again");
+                        if(retry===true)
+                        {
+                            game();
+                        }
+                        else{
+                            alert("Thanks for playing");
+                            break;
+                        }
                         break;
                     }
-                    break;
-                }
-                else{
-                    alert("You have won");
-                    retry=confirm("Do you want to try again");
-                    if(retry===true)
-                    {
-                        game();
-                    }
                     else{
-                        alert("Thanks for playing");
+                        alert("You have won");
+                        retry=confirm("Do you want to try again");
+                        if(retry===true)
+                        {
+                            game();
+                        }
+                        else{
+                            alert("Thanks for playing");
+                            break;
+                        }
                         break;
+
                     }
-                    break;
 
-                }
-
+            }
         }
+        else
+        { 
+            alert("you entered something wrong.Try again");
+            game()
         }
-      else
-      { 
-         alert("you entered something wrong.Try again");
-         game()
-      }
     }
     else
     {
